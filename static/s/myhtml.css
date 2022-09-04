@@ -1,0 +1,64 @@
+body {
+
+    background-color: rgb(202, 182, 158);
+    font-size: large;
+    /* font-family: 'Courier New', Courier, monospace; */
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+h1{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.s2{
+
+   margin: -56px 310px;
+   cursor: pointer;
+  
+}
+.m1{
+
+   margin: -600px 0px 20px 600px;
+    
+}
+.s3,.s7{
+
+    margin: 20px 0px 0px 600px;
+    
+ }
+.s4{
+
+    margin: -34px 0px 0px 895px;
+    cursor: pointer;
+    
+ }
+.m2{
+
+    width: 500px;
+    padding-top: 50px;
+
+}
+
+.s5{
+
+    margin: 40px 0px 0px 0px;
+    
+ }
+.s6{
+
+    margin: -33px 310px;
+    cursor: pointer;
+    
+ }
+
+.m3{
+    margin: -400px 0px 60px 600px;
+    width: 500px;
+ }
+
+ .s7{
+    margin: -20px 0px 0px 600px;
+ }
+
+ .s8{
+    margin: -33px 0px 0px 895px;
+    cursor: pointer;
+ }
