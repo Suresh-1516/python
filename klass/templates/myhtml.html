@@ -1,0 +1,53 @@
+{% load static %}
+{% static "img" as bU %}
+<!DOCTYPE html>
+<head>
+    <title>Html</title>
+    <link href="{% static 's/myhtml.css' %}" rel="stylesheet">
+</head>
+<body>
+    <h1>~~~  E - commerce  ~~~</h1>
+    <br>
+    <br>
+     
+    {% if user.is_authenticated %}
+    <h3> Hello, {{user.first_name}}</h3>
+    <a href="accounts/logout">Logout</a>
+    {% else %}
+    <a href="accounts/register">Registration</a>
+    <br>
+    <br>
+    <a href="accounts/login">Login</a>
+    <br>
+    <br>
+    {% endif %}
+
+    {% for d in dest%}
+    <div>
+    <div><img src="{{d.img.url}}"></div>
+
+    {% if d.offer %}
+    <div>Special Offer</div>
+    {% endif %}
+    
+    <!-- <img src="static/img/about-2.jpg" class="m1"><br> -->
+    <div class="s1"><h2>{{d.name}} </h2></div>
+    <div> <h2 class="s2">{{d.price}}/- Only</h2></div>
+    </div>
+    {% endfor %}
+
+
+
+    <!-- <h2 class="s3">KERLA</h2>
+    <h2 class="s4">19000/- Only</h2>
+    <img src="static/img/about-3.jpg" class="m2"><br>
+    <h2 class="s5">GOA</h2>
+    <h2 class="s6">4000/- Only</h2>
+    <img src="static/img/about-4.jpg" class="m3"><br>
+    <h2 class="s7">Dubai</h2>
+    <h2 class="s8">4000/- Only</h2> -->
+
+
+
+</body>
+</html>
